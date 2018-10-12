@@ -3,38 +3,38 @@
 class Elevador 
 {
     private $direccion;
-    private $inicio;
+    private $origen;
     private $destino;
-    private $peticiones = array();
-    public function __construct()
+    function __construct()
     {
         /*se construye el objeto elevador con las propiedades: 
         estado, direccion, piso actual, pedidos, alarmas
         */
-        $this->estado = $estado;
-        $this->arriba = $arriba;
-        $this->abajo = $abajo;
-        $this->$peticiones = array();
-        $this->señales = $señales;
-        $this->piso_actual = $piso_actual;
+        $this->origen = $origen;
+        $this->destino = $destino;
+        if($origen>$destino) {
+            $this->direccion="down";
+        } else {
+            $this->direccion="up";
+        }
     }
 
-    public function setBeginning()
+    function getBeginning()
     {
         //"idle","maintenance","busy" estados del elevador
-        $estado = "idle";
-        $piso_actual = 1;
+        return $this -> $origen;
     }
 
-    public function completeRequest($peticiones)
+    function getDirection()
     {
-        //Peticiones obtiene su piso de origen y destino
+        return $this -> $direccion;
     }
 
-    public function request($peticiones, $piso_actual, $origen, $destino, $maxPisos)
+    function getDestination()
     {
-        
+        return $this -> $destino;
     }
+
 }   
 
 ?>
