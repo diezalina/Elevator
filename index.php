@@ -14,9 +14,8 @@
 	<div class="container">
 	<div class="row">
 	<div class="col-md-6">		
-	<h1>elevador</h1>
+	<h1>Static Elevator</h1>
 	<form action="elevator.php" method="GET" >
-		
 		<div class="row">
 			<div class="col-md-6">	
 			<label>From</label>
