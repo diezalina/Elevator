@@ -70,16 +70,16 @@
    		}  		
    	}
    	if (empty($arrayBaja)==false) {
-   		$arrayBaja->convertirArray();
-   		$arrayBaja->ordenarDescendente();
+   		Elevador::convertirArray($arrayBaja);
+   		Elevador::ordenarDescendente($arrayBaja);
    	}
-   	if (empty($arrayBaja)==false) {	
-   		$arraySube->convertirArray();
-   		$arraySube->ordenarAscendente();
+   	if (empty($arraySube)==false) {	
+   		Elevador::convertirArray($arraySube);
+   		Elevador::ordenarAscendente($arraySube);
     }
    	if (empty($arrayUlti)==false){  	
-   		$arrayUlti->convertirArray();
-   		$arrayUlti->ordenarDescendente();
+   		Elevador::convertirArray($arrayUlti);
+   		Elevador::ordenarDescendente($arrayUlti);
    	}
    	$arrayFinal=array_merge($arrayBaja,$arraySube);
    	$arrayFinal=array_merge($arrayFinal,$arrayUlti);	
@@ -110,20 +110,14 @@
    		}
    	}
    	if (empty($arrayBaja)==false) {
-   		/*$arrayBaja->convertirArray();
-		$arrayBaja->ordenarDescendente();*/
 		Elevador::convertirArray($arrayBaja);
 		Elevador::ordenarDescendente($arrayBaja);
    	}	
    	if (empty($arraySube)==false) {
-   		/*$arraySube->convertirArray();
-		$arraySube->ordenarAscendente();*/
 		Elevador::convertirArray($arraySube);
 		Elevador::ordenarAscendente($arraySube);   
    	}
    	if (empty($arrayUlti)==false) {
-   		/*$arrayUlti->convertirArray();
-		$arrayUlti->ordenarAscendente();*/
 		Elevador::convertirArray($arrayUlti);
 		Elevador::ordenarAscendente($arrayUlti);   
     }
@@ -137,6 +131,6 @@
    	echo "<pre>", print_r($arrayUlti), "</pre>";
    	echo "Peticiones ordenadas";
    	echo "<pre>", print_r($arrayFinal), "</pre>";
-   }  
+   }
    
 ?>

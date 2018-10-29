@@ -36,16 +36,20 @@
 			<div class="col-md-6">
 			<label>to</label>
 			<input type="text" name="destiny" class="form-control">
+			<input type="post" class="btn btn-danger" name="del1">
 			
 			<label>to</label>
 			<input type="text" name="destiny2" class="form-control">
+			<input type="post" class="btn btn-danger" name="del2">
 			
 			<label>to</label>
 			<input type="text" name="destiny3" class="form-control">
+			<input type="post" name="del3" class="btn btn-danger">
 
 			<label>to</label>
 			<input type="text" name="destiny4" class="form-control">
-			
+			<input type="post" name="del4" class="btn btn-danger">
+
 			<label>Mantenimiento</label>
 			<input type="text" name="maintenance2" class="form-control">
 			
