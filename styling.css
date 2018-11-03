@@ -1,0 +1,23 @@
+#myHeader {
+    background-color: #d75b65;
+    padding: 25px;
+    margin-left: -8px;
+    margin-right: -8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #3a3a3a;
+}
+
+#box{
+    background-color:#ffffff;
+    padding: 30px;
+    border-style: groove;
+    border-color: #adadad;
+}
+
+body{
+    background-color:#d75b65;
+}

@@ -24,7 +24,7 @@
 	$array[3]=new Elevador($peticion4,$destino4);
 	   
 
-    for ($i=0; $i <sizeof($array) ; $i++) { 
+    for ($i=0; $i <sizeof($array)+1; $i++) { 
       if ($array[$i]->getBeginning()==$mantenimiento1 || $array[$i]->getPath()==$mantenimiento1) {
         unset($array[$i]);
       }
