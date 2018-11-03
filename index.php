@@ -62,7 +62,7 @@
 		<br>	
 		<input type="submit" class="btn btn-primary">
 	</form>
-	</div>	
+	</div>
 	</div>
 	</div>
 </body>
