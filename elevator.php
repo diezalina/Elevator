@@ -38,7 +38,7 @@
    	$u=0; //last array of petitions
    	$dir=0; //direction
    	if ($direccion=="stand") {
-	   	for ($i=0; $i <sizeof($array) ; $i++) { 
+	   	for ($i=0; $i <sizeof($array); $i++) { 
 	   		if ($elevador==$array[$i]->getBeginning()) {
 	   		    if ($array[$i]->getPath()>$array[$i]->getBeginning()) {
 	                $direccion="up";
@@ -53,7 +53,7 @@
         }
     } 
   if ($direccion=="down") {
-	for ($i=0; $i <sizeof($array) ; $i++) { 
+	for ($i=0; $i <sizeof($array); $i++) { 
    		if ($elevador<$array[$i]->getBeginning() && $direccion==$array[$i]->getDirection()) {
    			$arrayUlti[$u]=$array[$i];  					
    			unset($array[$i]);
