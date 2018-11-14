@@ -1,0 +1,11 @@
+Costos de producción: Costos en los que la materia prima se convierte en producto
+Costos de distribución: Costos generados de transladar el producto a consumidores.
+Costos de administración: Su origen está en los departamentos administrativos.
+    Ejemplo: Gastos de nómina, sueldos secretaria y/o contador.
+Costos controlables: Surgen como resultado de una decisión por parte de la gerencia.
+    Ejemplo: Aumento de personal, compra de equipo, etc.
+Costos no controlables: Costos en los que no se tiene autoridad alguna.
+    Ejemplo: Aumento en la renta.
+Costos históricos: Se refiere a los costos realizados en una etapa pasada.
+Costos fijos: Son costos que se mantienen constantes durante un período específico.
+Costos variables: Son costos que varían según el nivel de producción.

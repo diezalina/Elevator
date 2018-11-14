@@ -1,14 +1,14 @@
 <?php
     include ('class.elevator.php');
     
-    $peticion=$_GET['petition'];
+    /*$peticion=$_GET['petition'];
     $destino=$_GET['destiny'];
     $peticion2=$_GET['petition2'];
     $destino2=$_GET['destiny2'];
     $peticion3=$_GET['petition3'];
     $destino3=$_GET['destiny3'];
     $peticion4=$_GET['petition4'];
-    $destino4=$_GET['destiny4'];
+    $destino4=$_GET['destiny4'];*/
     $mantenimiento1=$_GET['maintenance1'];
     $mantenimiento2=$_GET['maintenance2'];
     $direccion=$_GET['direction'];
@@ -18,20 +18,24 @@
     $arrayUlti=array();
     $arrayFinal=array();
     $array=array();
-    $array[0]=new Elevador($peticion,$destino);
+    /*$array[0]=new Elevador($peticion,$destino);
     $array[1]=new Elevador($peticion2,$destino2);
     $array[2]=new Elevador($peticion3,$destino3);
-	$array[3]=new Elevador($peticion4,$destino4);
+	$array[3]=new Elevador($peticion4,$destino4);*/
 	   
+	foreach($_GET['data'] as $inputData) {
+		$array[] = new Elevador($inputData['petition'],$inputData['destiny']);
+	}
+	print_r($_GET['data']);
 
-    for ($i=0; $i <sizeof($array)+1; $i++) { 
-      if ($array[$i]->getBeginning()==$mantenimiento1 || $array[$i]->getPath()==$mantenimiento1) {
-        unset($array[$i]);
-      }
-      elseif ($array[$i]->getBeginning()==$mantenimiento2 || $array[$i]->getPath()==$mantenimiento2) {
-        unset($array[$i]);
-      }
-    }
+	foreach($array as $i => $arrayData) {
+        if ($arrayData->getBeginning()==$mantenimiento1 || $arrayData->getPath()==$mantenimiento1) {
+            unset($array[$i]);
+        } elseif ($arrayData->getBeginning()==$mantenimiento2 || $arrayData->getPath()==$mantenimiento2) {
+            unset($array[$i]);
+        }
+	}
+	
     $array=array_values($array);
 	$b=0; //petitions that go down
    	$s=0; //petitions that go up
