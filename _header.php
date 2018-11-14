@@ -13,4 +13,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 id="myHeader">Elevator</h1>
+    <nav class="navbar navbar-expand-lg navbar-light" id="myHeader">
+  <a class="navbar-brand" href="index.php"><h1>El problema del elevador</h1></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.php">Elevador a la n</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="static-elevator.php">Elevador estático</a>
+      </li>
+    </ul>
+</nav>
+<br>

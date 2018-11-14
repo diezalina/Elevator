@@ -1,57 +1,41 @@
-<?php
-	include("_header.php");
+<?php 
+    include("_header.php");
 ?>
-	<div class="container" id="box">
-	<div class="row">
-	<div class="col-md-6">
-	<br>
-	<form action="elevator.php" method="GET">
-		<div class="row">
-			<div class="col-md-6">	
-			<label>From</label>
-			<input type="text" name="data[1][petition]" class="form-control">
-
-			<label>From</label>
-			<input type="text" name="data[2][petition]" class="form-control">
-
-			<label>From</label>
-			<input type="text" name="data[3][petition]" class="form-control">
-
-			<label>From</label>
-			<input type="text" name="data[4][petition]" class="form-control">
-
-			<label>Mantenimiento</label>
-			<input type="text" name="maintenance1" class="form-control">
-			</div>
-			<div class="col-md-6">
-			<label>to</label>
-			<input type="text" name="data[1][destiny]" class="form-control">
-			
-			<label>to</label>
-			<input type="text" name="data[2][destiny]" class="form-control">
-			
-			<label>to</label>
-			<input type="text" name="data[3][destiny]" class="form-control">
-
-			<label>to</label>
-			<input type="text" name="data[4][destiny]" class="form-control">
-
-			<label>Mantenimiento</label>
-			<input type="text" name="maintenance2" class="form-control">
-			
+<div class="container" id="box">
+<div>
+    <button onclick='add()' class="btn btn-success">
+    + Petición
+    </button>
+</div>
+<form action="elevator.php" method="GET">
+<br>
+<div class="row">
+    <div class="col-md-3">
+        <label>Mantenimiento</label>
+        <input type="text" name="maintenance1" class="form-control">
+    </div>
+    <div class="col-md-3">    
+        <label>Mantenimiento</label>
+        <input type="text" name="maintenance2" class="form-control">
+    </div>
+    </div>
+<div class="row">
+    <div class="col-md-3">
+    <br>
+		    <label>Estado del elevador</label>
+			  <input type="text" name="elevador" class="form-control">
+    </div>
+    <div class="col-md-3">
+    <br>
+			  <label>Dirección del elevador</label>
+			  <input type="text" name="direction" class="form-control">
 		</div>
 		<br>
-		<label>Elevador</label>
-			<input type="text" name="elevador" class="form-control">
-			<label>Direccion</label>
-			<input type="text" name="direction" class="form-control">
-			<br>
-		</div>
-		<br>	
-		<input type="submit" class="btn btn-primary">
-	</form>
-	</div>
-	</div>
+</div>
+    <br>
+		  <input type="submit" class="btn btn-primary btn-lg">
+</form>
+</div>
 <?php 
     include("_footer.php");
 ?>
