@@ -1,14 +1,6 @@
 <?php
     include ('class.elevator.php');
     
-    /*$peticion=$_GET['petition'];
-    $destino=$_GET['destiny'];
-    $peticion2=$_GET['petition2'];
-    $destino2=$_GET['destiny2'];
-    $peticion3=$_GET['petition3'];
-    $destino3=$_GET['destiny3'];
-    $peticion4=$_GET['petition4'];
-    $destino4=$_GET['destiny4'];*/
     $mantenimiento1=$_GET['maintenance1'];
     $mantenimiento2=$_GET['maintenance2'];
     $direccion=$_GET['direction'];
@@ -18,10 +10,6 @@
     $arrayUlti=array();
     $arrayFinal=array();
     $array=array();
-    /*$array[0]=new Elevador($peticion,$destino);
-    $array[1]=new Elevador($peticion2,$destino2);
-    $array[2]=new Elevador($peticion3,$destino3);
-	$array[3]=new Elevador($peticion4,$destino4);*/
 	   
 	foreach($_GET['data'] as $inputData) {
 		$array[] = new Elevador($inputData['petition'],$inputData['destiny']);
